@@ -113,7 +113,8 @@ button
 .picture
 {
     height: 20rem;
-    width: 20rem;
+    width: 25rem;
+    border-radius: 10px;
 }
 
 .section1
@@ -187,6 +188,12 @@ button
     justify-content: space-around;
 }
 
+.heading
+{
+    font-weight: bolder;
+    font-size: var(--pc-large);
+    margin-bottom: 2rem;
+}
 .sec_1
 {
     display: flex;
