@@ -187,6 +187,10 @@ button
         width: 15rem;
         border-radius: 10px;
     }
+    .left
+    {
+        padding: 3rem;
+    }
 }
 
 .list
@@ -247,6 +251,14 @@ button
 
 @media screen and (max-width: 770px)
 {
+    .heading
+    {
+        font-weight: bolder;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
     .sec_1
     {
         flex-direction: column;
