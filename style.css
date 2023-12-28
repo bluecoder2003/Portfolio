@@ -13,7 +13,7 @@
     --button-color1:#FFFFFF;
     --button-color2:#F4ACB7;
 
-    --background2:#9D8189;
+    --background2:#F7D1CD;
     
     --pc-large:80px;
     --pc-medium:40px;
@@ -271,7 +271,7 @@ button
 {
     width: 15rem; 
     height: 17rem; 
-    background-color: #92737B;  
+    background-color: #F3BDB7;  
     display: flex;
     flex-direction: column;
     padding: 2rem;
