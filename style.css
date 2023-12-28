@@ -181,6 +181,12 @@ button
     {
         flex-direction:column;
     }
+    .picture
+    {
+        height: 10rem;
+        width: 15rem;
+        border-radius: 10px;
+    }
 }
 
 .list
