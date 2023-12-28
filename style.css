@@ -207,8 +207,10 @@ button
 
 .pic
 {
-    height: 15rem;
-    width: 15rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .img1
@@ -221,7 +223,7 @@ button
 
 .t2
 {
-    font-weight: bolder;
+    font-weight: bold;
     margin-bottom: 1rem;
     font-family: 'Albert Sans', sans-serif;
 }
