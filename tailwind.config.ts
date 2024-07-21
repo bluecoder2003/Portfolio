@@ -20,6 +20,7 @@ const config: Config = {
         black: "#0B001A",
       },
       animation: {
+        rotate: 'rotate 5s linear infinite',
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
