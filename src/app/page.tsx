@@ -41,7 +41,7 @@ const extProps = [
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col min-h-screen overflow-hidden px-5 justify-center items-center">
+    <div className="flex w-full flex-col min-h-screen overflow-hidden px-5 justify-center items-center custom-cursor">
       <HeroSection />
 
       {/* Render the first text component */}

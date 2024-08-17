@@ -3,23 +3,33 @@
 @tailwind utilities;
 
 @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .rotate-infinite {
-    animation: rotate 5s linear infinite;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .custom-cursor {
-    cursor: url('/assets/Image.svg'), auto;
-  }
-  .gradient-text {
-    background: linear-gradient(to right, #8338EC, #B923FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+}
+
+/* .custom-cursor {
+  cursor: url('/assets/Image.svg'), auto;
+} */
+
+.rotate-infinite {
+  animation: rotate 5s linear infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #8338EC, #B923FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
