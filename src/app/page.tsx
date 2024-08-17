@@ -1,81 +1,76 @@
 import React from "react";
-import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
-import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
-import { EvervaultCard } from "@/components/ui/evervault-card";
-import TailwindConnectButton from "@/components/ui/tailwindcss-buttons";
-import Image from "next/image";
+import HeroSection from "@/components/custom/HeroSection";
 import ReusableCardComponent from "@/components/custom/ReusableCardComponent";
+import ReusableTextComponent from "@/components/custom/ReusableTextComponent";
 
 const cardData = [
   {
-    title:"Ledflow",
-    description:"blockchain"
+    title: "Ledflow",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+    bgImage: "/assets/bg_pic.svg",
+    recentText: "RECENT",
+    tags: ["Web design", "Development"],
+    imgSrc: "/assets/demo.svg",
+    imgAlt: "Korba Project",
   },
   {
-    title:"Korba",
-    description:"Lorem"
+    title: "Korba",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+    bgImage: "/assets/bg_pic2.svg",
+    recentText: "RECENT",
+    tags: ["Web design", "Development"],
+    imgSrc: "/assets/demo.svg",
+    imgAlt: "Korba Project",
+  },
+];
+
+const extProps = [
+  {
+    topText: "CURATED WORK",
+    middleText: "Featured Projects",
+    bottomText: "Meeting goals through personalized service approach",
   },
   {
-    title:"Alathl",
-    description:"ipsum"
+    topText: "MY SERVICES",
+    middleText: "Diverse Services To Meet Needs",
+    bottomText: "Meeting goals through personalized service approach",
   },
-]
+];
+
 export default function Home() {
   return (
-    <div className="flex w-full flex-col min-h-screen overflow-hidden px-5">
-      {/* Background Gradient Animation Section */}
-      <BackgroundGradientAnimation className="flex w-full rounded-b-[20px]">
-        <div className="flex flex-col items-center justify-center w-8/12 h-screen pl-10 rounded-b-[20px]">
-          <div className="max-w-screen-lg w-full text-left mb-12">
-            <div className="text-bglight text-4xl md:text-5xl lg:text-7xl mb-4">
-              I create{" "}
-              <span
-                className="italic"
-                style={{
-                  background: "linear-gradient(to right, #8338EC, #B923FF)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  fontFamily: "Georgia",
-                }}
-              >
-                beautiful
-              </span>{" "}
-              experiences
-            </div>
-            <div className="text-bglight text-xl md:text-xl lg:text-xl w-10/12">
-              I work with people all over the world to create tailor-made
-              Webflow experiences
-            </div>
-            <div className="absolute bottom-0 right-0 mb-40 mr-20 rotate-infinite">
-              <img
-                src="/assets/Image.svg"
-                alt="Decorative"
-                className="w-20 h-20"
-              />
-            </div>
-          </div>
-        </div>
-      </BackgroundGradientAnimation>
+    <div className="flex w-full flex-col min-h-screen overflow-hidden px-5 justify-center items-center">
+      <HeroSection />
 
-      {/* Cards Section */}
-      <div className="flex w-full py-10 overflow-hidden">
-        <div className="w-full flex items-center justify-center">
-          <div className="w-full flex items-center gap-10">
-            <EvervaultCard className="w-11/12 h-72 p-6 gap-8 space-y-4 bg-bgdark rounded-[20px]">
-              {/* Add your card content here */}
-            </EvervaultCard>
+      {/* Render the first text component */}
+      <ReusableTextComponent
+        topText={extProps[0].topText}
+        middleText={extProps[0].middleText}
+        bottomText={extProps[0].bottomText}
+      />
 
-            <EvervaultCard className="w-11/12 h-72 p-6 space-y-4 bg-bgdark rounded-[20px]">
-              {/* Add your card content here */}
-            </EvervaultCard>
-          </div>
-        </div>
-      </div>
+      {/* Render the cards */}
+      {cardData.map((item, index) => (
+        <ReusableCardComponent
+          key={index}
+          title={item.title}
+          description={item.description}
+          bgImage={item.bgImage}
+          recentText={item.recentText}
+          tags={item.tags}
+          imgSrc={item.imgSrc}
+          imgAlt={item.imgAlt}
+        />
+      ))}
 
-      {cardData.map((item,index)=>(<ReusableCardComponent key={index} title={item.title} description={item.description}/>))}
-      
-      
-      
+      {/* Render the second text component */}
+      <ReusableTextComponent
+        topText={extProps[1].topText}
+        middleText={extProps[1].middleText}
+        bottomText={extProps[1].bottomText}
+      />
     </div>
   );
 }

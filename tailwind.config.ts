@@ -26,6 +26,7 @@ const config: Config = {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        'rotate-left-right': 'rotate-left-right 2s ease-in-out infinite',
       },
       keyframes: {
         moveHorizontal: {
@@ -61,9 +62,14 @@ const config: Config = {
             transform: "translateY(-50%)",
           },
         },
+        'rotate-left-right': {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(20deg)' },
         },
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

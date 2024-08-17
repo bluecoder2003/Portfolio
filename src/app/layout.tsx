@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { FloatingNav } from "@/components/ui/floating-navbar";
 import Navbar from "@/components/custom/Navbar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} mx-auto bg-black`}>
-        <Navbar />
+        <Navbar/>
         {children}
       </body>
     </html>

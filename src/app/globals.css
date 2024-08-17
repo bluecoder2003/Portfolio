@@ -18,4 +18,8 @@
   .custom-cursor {
     cursor: url('/assets/Image.svg'), auto;
   }
-  
+  .gradient-text {
+    background: linear-gradient(to right, #8338EC, #B923FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
