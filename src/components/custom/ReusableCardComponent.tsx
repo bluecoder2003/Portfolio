@@ -34,7 +34,6 @@ const ReusableCardComponent = ({ title, description, bgImage, recentText, tags, 
           <div>
             <p className="mt-4 text-gray-600 max-w-sm">{description}</p>
             <TailwindConnectButton></TailwindConnectButton>
-            <button className='border p-2  rounded-full'>SEE PROJECT</button>
           </div>
         </div>
         <div className="flex w-full md:w-1/2 pl-0 md:pl-6 mt-6 md:mt-0">
