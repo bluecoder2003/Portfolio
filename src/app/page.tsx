@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import Link from 'next/link';
 import HeroSection from "@/components/custom/HeroSection";
 import ReusableCardComponent from "@/components/custom/ReusableCardComponent";
 import ReusableTextComponent from "@/components/custom/ReusableTextComponent";
@@ -50,20 +51,20 @@ const extProps = [
 ];
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulate data fetching or other loading tasks
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust the timing as needed
+  // useEffect(() => {
+  //   // Simulate data fetching or other loading tasks
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000); // Adjust the timing as needed
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (loading) {
-    return <Preloader />;
-  }
+  // if (loading) {
+  //   return <Preloader />;
+  // }
 
   return (
     // <div className="flex w-full flex-col min-h-screen overflow-hidden px-5 justify-center items-center custom-cursor">
@@ -91,10 +92,14 @@ export default function Home() {
 
 <div className="flex flex-col md:flex-row gap-8 md:gap-20">
   <div className="py-8 md:py-16">
-    <Card text="Work in Designing" imageSrc="/assets/ss_figma.svg" />
+  <Link href="/design">
+      <Card text="Work in Designing" imageSrc="/assets/ss_figma.svg" />
+  </Link>
   </div>
   <div className="py-8 md:py-16">
-    <Card text="Work in Development" imageSrc="/assets/ss_vscode.svg" />
+  <Link href="/development">
+      <Card text="Work in Development" imageSrc="/assets/ss_vscode.svg" />
+  </Link>
   </div>
 </div>
 
