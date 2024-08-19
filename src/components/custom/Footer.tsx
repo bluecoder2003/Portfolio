@@ -1,6 +1,5 @@
 import React from "react";
 import ReusableTextComponent from "@/components/custom/ReusableTextComponent";
-import { StarsBackground } from "../ui/stars-background"; // Ensure the correct path
 
 const extProps = [
   {
