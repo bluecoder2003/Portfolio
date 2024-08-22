@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 interface CardProps {
   text: string;
-  imageSrc: string; // Add imageSrc prop
+  imageSrc: string;
 }
 
 const Card: React.FC<CardProps> = ({ text, imageSrc }) => {
@@ -36,32 +36,32 @@ const Card: React.FC<CardProps> = ({ text, imageSrc }) => {
         backgroundPosition: 'center',
         boxShadow: isHovering ? '0 4px 20px rgba(52, 13, 101, 0.5)' : 'none',
         position: 'relative',
-        overflow: 'hidden', // Ensure no part of the image is shown outside the container
+        overflow: 'hidden',
       }}
-      className="flex flex-col items-start justify-start text-3xl rounded-xl w-[34rem] px-10 py-10 h-[20rem] text-bglight transition-all duration-300 border border-bgdark hover:border-[#340D65]"
+      className="flex flex-col items-start justify-start text-2xl sm:text-3xl rounded-xl w-[25rem] h-[15rem] sm:w-[34rem] sm:h-[20rem] p-6 sm:px-10 sm:py-10 text-bglight transition-all duration-300 border border-bgdark hover:border-[#340D65]"
     >
       <div className="flex flex-col items-start justify-between w-full">
         <span>{text}</span>
         <img
           src="/assets/arrow.svg"
           alt="Arrow"
-          className={`mt-40 h-8 w-8 transition-all duration-300 ${isHovering ? 'bg-bgdark' : ''}`}
+          className={`mt-16 sm:mt-40 h-6 w-6 sm:h-8 sm:w-8 transition-all duration-300 ${isHovering ? 'bg-bgdark' : ''}`}
         />
         <motion.img
-          src={imageSrc} // Use the imageSrc prop
+          src={imageSrc}
           alt="Figma Screenshot"
           style={{
             position: 'absolute',
             bottom: '0',
             right: '0',
-            width: '85%',
-            height: '85%',
+            width: '75%',
+            height: '75%',
             objectFit: 'cover',
-            clipPath: 'inset(25% 0 0 25%)', // Show only 3/4 of the image
-            borderRadius: '15px', // Add rounded corners
+            clipPath: 'inset(25% 0 0 25%)',
+            borderRadius: '15px',
           }}
           animate={{
-            rotate: isHovering ? -3 : 0, // Tilt the image by 5 degrees on hover
+            rotate: isHovering ? -3 : 0,
           }}
           transition={{ duration: 0.3 }}
         />

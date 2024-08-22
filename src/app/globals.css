@@ -47,3 +47,8 @@ body {
   white-space: nowrap;
   animation: marquee 15s linear infinite;
 } */
+
+.icon-size {
+  width: 40px; /* Set your desired width */
+  height: 40px; /* Set your desired height */
+}

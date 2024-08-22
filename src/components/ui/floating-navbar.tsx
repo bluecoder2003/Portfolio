@@ -69,7 +69,9 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-m">{navItem.name}</span>
           </Link>
         ))}
-        <HoverBorderGradient>Let's Connect</HoverBorderGradient>
+        <HoverBorderGradient>
+  <a href="/contact">Let's Connect</a>
+</HoverBorderGradient>
       </motion.div>
     </AnimatePresence>
   );

@@ -27,6 +27,7 @@ const config: Config = {
         black: "#0B001A",
       },
       animation: {
+        move: "move 5s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         rotate: 'rotate 5s linear infinite',
@@ -38,6 +39,10 @@ const config: Config = {
         'rotate-left-right': 'rotate-left-right 2s ease-in-out infinite',
       },
       keyframes: {
+        move: {
+          "0%": { transform: "translateX(-200px)" },
+          "100%": { transform: "translateX(200px)" },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
