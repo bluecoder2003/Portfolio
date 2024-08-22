@@ -1,5 +1,8 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import ReusableTextComponent from "@/components/custom/ReusableTextComponent";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const extProps = [
   {
@@ -10,16 +13,25 @@ const extProps = [
 ];
 
 const Contact: React.FC = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Duration of animations
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
-    <div className="bg-black text-white py-8">
+    <div className="bg-black text-white py-8 mt-10">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
+        <div className="text-center mb-6" data-aos="fade-up">
           {extProps.map((props, index) => (
             <ReusableTextComponent
               key={index}
               topText={props.topText}
               middleText={props.middleText}
-              bottomText={props.bottomText}
+              bottomText={props.bottomText} // Add AOS attribute for animation
             />
           ))}
         </div>
