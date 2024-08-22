@@ -29,11 +29,11 @@ const ReusableCardComponent = ({
 }: cardtype) => {
   return (
     <div
-      className="flex w-11/12 md:w-3/4 flex-col md:flex-row h-auto md:h-[600px] justify-center items-center rounded-[20px] mt-10 bg-cover bg-center"
+      className="flex w-auto md:w-3/4 flex-col md:flex-row h-auto md:h-[600px] justify-center items-center rounded-[20px] mt-10 bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
-      <div className="flex flex-col md:flex-row items-center justify-between w-full h-full px-6 md:px-12 bg-opacity-75 rounded-[20px] p-6">
-        <div className="flex flex-col w-full md:w-1/2 pr-0 md:pr-6">
+      <div className="flex flex-col md:flex-row items-center justify-between w-auto h-full px-6 md:px-12 bg-opacity-75 rounded-[20px] p-6">
+        <div className="flex flex-col w-11/12 md:w-1/2 pr-0 md:pr-6">
           <div className="mb-6 md:mb-16">
             <span className={`text-lg text-${textColor}`}>{recentText}</span>
             <h1 className={`text-3xl md:text-5xl font-bold text-${titleColor}`}>{title}</h1>
