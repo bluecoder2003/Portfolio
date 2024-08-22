@@ -3,19 +3,52 @@
 @tailwind utilities;
 
 @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .rotate-infinite {
-    animation: rotate 5s linear infinite;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .custom-cursor {
-    cursor: url('/assets/Image.svg'), auto;
-  }
-  
+}
+
+/* .custom-cursor {
+  cursor: url('/assets/Image.svg'), auto;
+} */
+
+.rotate-infinite {
+  animation: rotate 5s linear infinite;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #8338EC, #B923FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* @keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+} */
+
+.icon-size {
+  width: 40px; /* Set your desired width */
+  height: 40px; /* Set your desired height */
+}

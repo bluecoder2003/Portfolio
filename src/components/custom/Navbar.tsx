@@ -1,33 +1,18 @@
-import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import { FloatingNav } from "../ui/floating-navbar"; // Adjust the import path as needed
 
 export default function Navbar() {
-  return (
-    <div className="mt-5 mx-5 rounded-t-[20px] bg-bgdark text-bglight flex justify-between items-center h-20 px-10 text-[14px]">
-      <ul className="flex gap-6">
-        <div className="flex justify-center items-center">
-          <li className="inline-block">LINKEDIN</li>
-          <ArrowUpRight />
-        </div>
-        <div className="flex justify-center items-center">
-          <li className="inline-block">GITHUB</li>
-          <ArrowUpRight />
-        </div>
-        <div className="flex justify-center items-center">
-          <li className="inline-block">DRIBBLE</li>
-          <ArrowUpRight />
-        </div>
-      </ul>
-      <ul className="flex w-full justify-end items-center gap-[20px]">
-        <li className="inline-block ">HOME</li>
-        <li className="inline-block">ABOUT</li>
-        <li className="inline-block">PROJECTS</li>
+  const navItems = [
+    { name: "Home", link: "/" },
+    { name: "Work", link: "/#work-section" },
+    { name: "About", link: "/about" },
+    // { name: "Projects", link: "/projects" },
+  ];
 
-        <button className="px-[14px] py-[10px] rounded-full flex items-center justify-center gap-2 ">
-          < HoverBorderGradient><span>LET&apos;S TALK</span></HoverBorderGradient>
-        </button>
-      </ul>
+  return (
+    <div>
+      {/* Call FloatingNav with the provided navItems */}
+      <FloatingNav navItems={navItems} />
     </div>
   );
 }
