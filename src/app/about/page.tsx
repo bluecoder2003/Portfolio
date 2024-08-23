@@ -6,7 +6,7 @@ const Page: React.FC = () => {
   return (
     <div className="flex w-full flex-col min-h-screen overflow-hidden justify-center items-center">
       {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center space-y-4 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center space-y-4 py-10 px-4 sm:px-6 lg:px-8 mt-8">
         <img
           src="/assets/smile.svg"
           alt="Smile"
@@ -15,7 +15,7 @@ const Page: React.FC = () => {
         <div className="text-lg md:text-xl font-semibold lg:text-xl text-center gradient-text">
           CURATED WORK
         </div>
-        <div className="text-lg md:text-xl lg:text-5xl text-center text-bglight">
+        <div className="text-3xl md:text-3xl lg:text-5xl text-center text-bglight">
           Me in a nutshell
         </div>
         <div className="flex flex-col items-center text-lg md:text-xl lg:text-xl py-10 text-center text-[#746D80] px-4 sm:px-6 lg:px-40 ">
