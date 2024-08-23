@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import { motion } from "framer-motion"
 import Link from 'next/link';
 import HeroSection from "@/components/custom/HeroSection";
 import ReusableCardComponent from "@/components/custom/ReusableCardComponent";
@@ -43,7 +44,7 @@ const extProps = [
   {
     topText: "CURATED WORK",
     middleText: "Featured Projects",
-    bottomText: "Meeting goals through personalized service approach",
+    bottomText: "Achieving goals through a personalized service approach.",
   },
   {
     topText: "TESTIMONIALS",
@@ -135,9 +136,9 @@ const Home: React.FC = () => {
       <div className="flex flex-col md:flex-row-reverse items-start justify-start space-y-8 md:space-y-0 md:space-x-20 py-10 px-4 md:px-8">
         <img src="/assets/my_pic.png" alt="My Picture" className="w-full h-96 mx-auto md:mr-20" data-aos="zoom-in" />
         <div className="flex flex-col items-center md:items-start justify-start space-y-4 ">
-          <div className="text-base md:text-base lg:text-lg text-start w-5/6 text-[#746D80]" style={{ textAlign: "justify" }} data-aos="fade-up">
-            Design has always been in my DNA. As a kid you would find me dabbling my hands in paint and making random abstract art, and I grew to like how technology became a very integral part of expressing our creativity over the years. I stumbled upon UX/UI which was a perfect combination of both. I look forward to my journey in this field after transitioning from a non-design background. 
-          </div>
+        <div className="text-base md:text-base lg:text-lg text-start w-5/6 text-[#746D80]" style={{ textAlign: "justify" }} data-aos="fade-up">
+      I’m a <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>designer</motion.span> and <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>front-end developer</motion.span> with a passion for creating intuitive and engaging digital experiences. I’ve had the privilege of  <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>winning the Girls Track in two hackathons</motion.span>  and gaining valuable experience through <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>three internships</motion.span>. These opportunities have allowed me to grow both professionally and personally, and I’m always eager to take on new challenges and learn from each experience.
+    </div>
           <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50" data-aos="fade-up">
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             <a href="/about" className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-black px-2 py-2 text-m text-bglight backdrop-blur-3xl">
