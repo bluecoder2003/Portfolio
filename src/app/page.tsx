@@ -32,7 +32,7 @@ const cardData = [
       "TUF features a flashcard learning tool, an admin panel for managing flashcards, and is built with a tech stack that ensures scalability and maintainability.",
     bgImage: "/assets/bg_pic2.svg",
     recentText: "RECENT",
-    tags: ["Web design", "Development"],
+    tags: ["Flashcards", "Dev"],
     imgSrc: "/assets/tuf.svg",
     imgAlt: "Korba Project",
     titleColor: "bglight", // Example color

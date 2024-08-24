@@ -37,9 +37,11 @@ const HeroSection: React.FC = () => {
               Hi, I'm Neelakshi, passionate about UI/UX design and front-end development.
             </div>
             <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 justify-center">
-              <button className="px-4 py-2 rounded-xl text-xl border border-neutral-600 text-bgdark font-medium bg-bglight hover:bg-gray-100 transition duration-200">
+              <a
+              href="/contact"
+              className="px-4 py-2 rounded-xl text-xl border border-neutral-600 text-bgdark font-medium bg-bglight hover:bg-gray-100 transition duration-200">
                 Let's Connect
-              </button>
+              </a>
               <a
   href="/assets/Neelakshi_Das_resume.pdf"
   download="Neelakshi_Das_resume.pdf"
