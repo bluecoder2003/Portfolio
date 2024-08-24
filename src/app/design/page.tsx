@@ -9,30 +9,46 @@ import Card from "@/components/custom/Card";
 
 const designCardData = [
   {
-    title: "Branding Project",
+    title: "Gamify",
     description:
-      "Crafting a unique brand identity for a startup, including logo design, color schemes, and visual guidelines.",
+      "It's a user-friendly digital platform that combines learning, collaboration, and recruitment for UI/UX designers.",
     bgImage: "/assets/bg_pic.svg",
-    recentText: "RECENT",
+    recentText: "HACKATHON",
     tags: ["Branding", "Design"],
-    imgSrc: "/assets/branding.svg",
+    imgSrc: "/assets/gamify.svg",
     imgAlt: "Branding Project",
     titleColor:"bgdark" ,// Example color
     textColor:"bgdark", // Example color
-    tagBorderColor:"bgdark" // Example color
+    tagBorderColor:"bgdark" ,
+    buttonLink:"https://www.figma.com/design/xtt9T0XReJuGZ3CoFIRuIk/2peep_um-hackathon2k23?node-id=226-17077&t=G3OH6X6bjqrDHetw-1"
   },
   {
-    title: "UI/UX Redesign",
+    title: "SCCSE Website",
     description:
-      "A complete overhaul of a mobile application’s UI/UX to enhance user experience and engagement.",
+      "Community website of SCCSE that showcases events, members and the legacy of sccse AOT.",
     bgImage: "/assets/bg_pic2.svg",
-    recentText: "RECENT",
+    recentText: "GROUP PROJECT",
     tags: ["UI/UX", "Design"],
-    imgSrc: "/assets/uiux.svg",
+    imgSrc: "/assets/sccse.svg",
     imgAlt: "UI/UX Redesign Project",
     titleColor:"bglight" ,// Example color
     textColor:"bglight", // Example color
-    tagBorderColor:"bglight" 
+    tagBorderColor:"bglight",
+    buttonLink:"https://www.figma.com/design/PPcA7xdKNAg8rPwvW50WRL/SCCSE-Website?node-id=0-1&t=SNiM5IgFLS7kDvKT-1"
+  },
+  {
+    title: "Uxopia",
+    description:
+      "Hackathon problem statement that challenged us to create a website under 1 hour for UI UX designers where they can be hired.",
+    bgImage: "/assets/bg_pic.svg",
+    recentText: "GROUP PROJECT",
+    tags: ["Branding", "Design"],
+    imgSrc: "/assets/uxopia.svg",
+    imgAlt: "Branding Project",
+    titleColor:"bgdark" ,// Example color
+    textColor:"bgdark", // Example color
+    tagBorderColor:"bgdark",
+    buttonLink:"https://www.figma.com/design/mLMUhQxSOdn2Fq6Pi94nbp/Uxopia?node-id=0-1&t=H6w7IAoNyq9S5xZa-1" 
   },
 ];
 
@@ -68,6 +84,8 @@ const DesignPage: React.FC = () => {
             titleColor={item.titleColor}
             textColor={item.textColor}
             tagBorderColor={item.tagBorderColor}
+            buttonLink={item.buttonLink}
+            data-aos="fade-up" 
           />
         ))}
 
@@ -79,7 +97,7 @@ const DesignPage: React.FC = () => {
         </div>
         <div className="py-8 md:py-16">
           <Link href="/">
-            <Card text="Go to Home" imageSrc="/assets/home.png" />
+            <Card text="Go to Home" imageSrc="/assets/hero.png" />
           </Link>
         </div>
       </div>

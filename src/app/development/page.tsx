@@ -7,30 +7,46 @@ import Card from "@/components/custom/Card";
 
 const developmentCardData = [
   {
-    title: "Web App Development",
+    title: "KnowledgeNook",
     description:
-      "Developing a scalable web application using React, Node.js, and MongoDB, ensuring optimal performance and user experience.",
-    bgImage: "/assets/bg_pic.svg",
-    recentText: "RECENT",
-    tags: ["Development", "Web App"],
-    imgSrc: "/assets/webapp.svg",
-    imgAlt: "Web App Development Project",
-    titleColor: "bgdark", // Example color
-    textColor: "bgdark", // Example color
-    tagBorderColor: "bgdark" // Example color
-  },
-  {
-    title: "API Integration",
-    description:
-      "Integrating third-party APIs to enhance functionality and connectivity in a client's existing application.",
+      "Hackathon project that helped up build a website for college students to access study materials easily and track progress.",
     bgImage: "/assets/bg_pic2.svg",
-    recentText: "RECENT",
-    tags: ["API", "Integration"],
-    imgSrc: "/assets/api.svg",
+    recentText: "HACKATHON PROJECT",
+    tags: ["API", "Dev"],
+    imgSrc: "/assets/knowledgenook.svg",
     imgAlt: "API Integration Project",
     titleColor: "bglight", // Example color
     textColor: "bglight", // Example color
-    tagBorderColor: "bglight"
+    tagBorderColor: "bglight",
+    buttonLink:"https://github.com/LoadingMinds/KnowledgeNookHack4bengal"
+  },
+  {
+    title: "AOT Website",
+    description:
+      "College website that showcases the events, achievements, placement records etc.",
+    bgImage: "/assets/bg_pic.svg",
+    recentText: "GROUP PROJECT",
+    tags: ["Development", "Web App"],
+    imgSrc: "/assets/aotwebsite.svg",
+    imgAlt: "Web App Development Project",
+    titleColor: "bgdark", // Example color
+    textColor: "bgdark", // Example color
+    tagBorderColor: "bgdark", // Example color
+    buttonLink:"https://github.com/lowcg/downhill"
+  },
+  {
+    title: "Collab Hub",
+    description:
+      "Experience the ultimate Kanban tool—effortlessly intuitive with real-time flowchart integration.",
+    bgImage: "/assets/bg_pic2.svg",
+    recentText: "GROUP PROJECT",
+    tags: ["React Flow", "Kanban"],
+    imgSrc: "/assets/collabhub.svg",
+    imgAlt: "API Integration Project",
+    titleColor: "bglight", // Example color
+    textColor: "bglight", // Example color
+    tagBorderColor: "bglight",
+    buttonLink:"https://github.com/collab-hub12"
   },
 ];
 
@@ -66,6 +82,8 @@ const DevelopmentPage: React.FC = () => {
           titleColor={item.titleColor}
           textColor={item.textColor}
           tagBorderColor={item.tagBorderColor}
+          buttonLink={item.buttonLink}
+          data-aos="fade-up"
         />
       ))}
 
@@ -77,7 +95,7 @@ const DevelopmentPage: React.FC = () => {
         </div>
         <div className="py-8 md:py-16">
           <Link href="/">
-            <Card text="Go to Home" imageSrc="/assets/home.png" />
+            <Card text="Go to Home" imageSrc="/assets/hero.png" />
           </Link>
         </div>
       </div>
