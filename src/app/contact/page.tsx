@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import React, { useEffect, useState } from "react";
 import ReusableTextComponent from "@/components/custom/ReusableTextComponent";
 import AOS from 'aos';
@@ -37,11 +38,19 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const emailParams = {
+      name: formData.name,
+      email: formData.email, // sender's email
+      message: formData.message,
+      to_email: formData.email, // Replace with the actual recipient's email
+      cc_email: formData.email, // Send a copy to the sender's email
+    };
+
     try {
       const result = await emailjs.send(
         'service_qp7cwzp', // Replace with your EmailJS Service ID
         'template_ipln82c', // Replace with your EmailJS Template ID
-        formData,
+        emailParams,        // Use emailParams instead of formData
         'vZqWbAVeqxMqxcdwY' // Replace with your EmailJS Public Key
       );
 
