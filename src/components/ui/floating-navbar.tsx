@@ -75,7 +75,7 @@ export const FloatingNav = ({
     )}
   >
     <div className="text-white text-xl">
-  <img src="/assets/smile.svg" alt="Logo" className="h-12 w-12" />
+  Logo
 </div>
     <button
       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
