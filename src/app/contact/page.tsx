@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-black text-bglight py-8 mt-8">
+    <div className="bg-black text-bglight py-8 mt-10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-6" data-aos="fade-up">
           {extProps.map((props, index) => (

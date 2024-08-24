@@ -74,7 +74,9 @@ export const FloatingNav = ({
       isMobileMenuOpen ? "rounded-full" : ""
     )}
   >
-    <div className="text-bglight text-xl">Logo</div>
+    <div className="text-white text-xl">
+  <img src="/assets/smile.svg" alt="Logo" className="h-12 w-12" />
+</div>
     <button
       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       className="text-bglight text-3xl"
