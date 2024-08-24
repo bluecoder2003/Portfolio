@@ -9,15 +9,18 @@ const Footer: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-between w-full mt-8 text-[#746D80] text-sm">
           <div className="flex flex-col sm:flex-row justify-between gap-6 order-1 sm:order-1">
             <div className="flex items-center">
-              LINKEDIN
+              <a href="https://www.linkedin.com/in/neelakshi-das-b0ba68244/"
+              className=" hover:text-bglight transition-colors">LINKEDIN</a>
               <img src="/assets/arrow.svg" alt="Arrow" className="ml-2 h-2 w-2" />
             </div>
             <div className="flex items-center">
-              GITHUB
+              <a href="hhttps://github.com/bluecoder2003"
+              className=" hover:text-bglight transition-colors">GITHUB</a>
               <img src="/assets/arrow.svg" alt="Arrow" className="ml-2 h-2 w-2" />
             </div>
             <div className="flex items-center">
-              DRIBBBLE
+              <a href="https://dribbble.com/bluecoder2003"
+              className=" hover:text-bglight transition-colors">DRIBBBLE</a>
               <img src="/assets/arrow.svg" alt="Arrow" className="ml-2 h-2 w-2" />
             </div>
           </div>

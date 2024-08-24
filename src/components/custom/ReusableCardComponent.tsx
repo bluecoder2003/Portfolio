@@ -1,5 +1,4 @@
 import React from 'react';
-import TailwindConnectButton from '../ui/tailwindcss-buttons';
 import Image from 'next/image';
 
 type cardtype = {
@@ -13,6 +12,7 @@ type cardtype = {
   titleColor?: string; 
   textColor?: string; 
   tagBorderColor?: string;
+  buttonLink?: string;
 };
 
 const ReusableCardComponent = ({
@@ -26,6 +26,7 @@ const ReusableCardComponent = ({
   titleColor , 
   textColor , 
   tagBorderColor , 
+  buttonLink,
 }: cardtype) => {
   return (
     <div
@@ -47,7 +48,15 @@ const ReusableCardComponent = ({
           </div>
           <div>
             <p className={`mt-4  text-${textColor} max-w-sm`}>{description}</p>
-            <TailwindConnectButton></TailwindConnectButton>
+            {buttonLink && (
+  <a
+    href={buttonLink}
+    className="flex text-sm border border-[#351A57] font-semibold mt-4 px-4 py-3 w-40 rounded-full bg-black text-bglight hover:bg-[#1d0d2d] transition-colors items-center"
+  >
+    SEE PROJECT
+    <img src="/assets/arrow.svg" alt="Arrow" className="ml-2 h-3 w-3" />
+  </a>
+)}
           </div>
         </div>
         <div className="flex w-full md:w-1/2 pl-0 md:pl-6 mt-6 md:mt-0">
