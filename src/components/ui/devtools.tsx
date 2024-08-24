@@ -11,7 +11,7 @@ export function CardDev() {
       </CardSkeletonContainer>
       <CardTitle>Development Tools I use</CardTitle>
       <CardDescription>
-        A card that showcases a set of tools that you use to create your product.
+        Tools that have helped me build products
       </CardDescription>
     </Card>
   );
