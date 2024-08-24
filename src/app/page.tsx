@@ -15,28 +15,30 @@ const cardData = [
   {
     title: "Ledflow",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+      "This is a blockchain application which helps connect the source to the consumer in the supply chain cycle",
     bgImage: "/assets/bg_pic.svg",
     recentText: "RECENT",
-    tags: ["Web design", "Development"],
-    imgSrc: "/assets/demo.svg",
+    tags: ["App design", "UI UX"],
+    imgSrc: "/assets/ledflow_proj.svg",
     imgAlt: "Korba Project",
     titleColor: "bgdark", // Example color
     textColor: "bgdark", // Example color
-    tagBorderColor: "bgdark" // Example color
+    tagBorderColor: "bgdark", // Example color
+    buttonLink:"https://www.figma.com/design/69St1JGAW8tbCKv4sQ0da9/Eureka?node-id=0-1&t=jVXL8XxbYDdfe9GE-1"
   },
   {
-    title: "Korba",
+    title: "Tuf",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.",
+      "TUF features a flashcard learning tool, an admin panel for managing flashcards, and is built with a tech stack that ensures scalability and maintainability.",
     bgImage: "/assets/bg_pic2.svg",
     recentText: "RECENT",
     tags: ["Web design", "Development"],
-    imgSrc: "/assets/demo.svg",
+    imgSrc: "/assets/tuf.svg",
     imgAlt: "Korba Project",
     titleColor: "bglight", // Example color
     textColor: "bglight", // Example color
-    tagBorderColor: "bglight"
+    tagBorderColor: "bglight",
+    buttonLink:"https://tuf-two.vercel.app/"
   },
 ];
 
@@ -99,6 +101,7 @@ const Home: React.FC = () => {
             titleColor={item.titleColor}
             textColor={item.textColor}
             tagBorderColor={item.tagBorderColor}
+            buttonLink={item.buttonLink}
             data-aos="fade-up" // Animation for card components
           />
         ))}
@@ -134,7 +137,12 @@ const Home: React.FC = () => {
       />
       </div>
       <div className="flex flex-col md:flex-row-reverse items-start justify-start space-y-8 md:space-y-0 md:space-x-20 py-10 px-4 md:px-8">
-        <img src="/assets/my_pic.png" alt="My Picture" className="w-full h-96 mx-auto md:mr-20" data-aos="zoom-in" />
+      <img 
+  src="/assets/my_pic.svg" 
+  alt="My Picture" 
+  className="w-full h-96 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto md:mr-20" 
+  data-aos="zoom-in" 
+/>
         <div className="flex flex-col items-center md:items-start justify-start space-y-4 ">
         <div className="text-base md:text-base lg:text-lg text-start w-5/6 text-[#746D80]" style={{ textAlign: "justify" }} data-aos="fade-up">
       I’m a <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>designer</motion.span> and <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>front-end developer</motion.span> with a passion for creating intuitive and engaging digital experiences. I’ve had the privilege of  <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>winning the Girls Track in two hackathons</motion.span>  and gaining valuable experience through <motion.span className="font-normal text-bglight" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1.5 }}>three internships</motion.span>. These opportunities have allowed me to grow both professionally and personally, and I’m always eager to take on new challenges and learn from each experience.
