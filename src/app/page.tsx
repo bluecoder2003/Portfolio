@@ -107,7 +107,7 @@ const Home: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex flex-col md:flex-row gap-2 md:gap-20">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-20 mt-8 md:mt-0">
         <div className="py-4 md:py-16" data-aos="fade-right">
           <Link href="/design">
             <Card text="Work in Designing" imageSrc="/assets/ss_figma.svg" />
