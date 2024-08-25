@@ -60,7 +60,7 @@ const developmentExtProps = [
 
 const DevelopmentPage: React.FC = () => {
   return (
-    <div className="flex w-full flex-col min-h-screen overflow-hidden justify-center items-center custom-cursor">
+    <div className="flex w-full flex-col min-h-screen overflow-hidden justify-center items-center custom-cursor px-4 md:px-8">
       <div className="pt-20">
         <ReusableTextComponent
           topText={developmentExtProps[0].topText}
@@ -87,13 +87,13 @@ const DevelopmentPage: React.FC = () => {
         />
       ))}
 
-      <div className="flex flex-col md:flex-row gap-8 md:gap-20 py-16">
-        <div className="py-8 md:py-16">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-20 mt-8 md:mt-0"> {/* Add top margin to the container */}
+        <div className="py-4 md:py-16" data-aos="fade-right">
           <Link href="/design">
             <Card text="Work in Designing" imageSrc="/assets/ss_figma.svg" />
           </Link>
         </div>
-        <div className="py-8 md:py-16">
+        <div className="py-4 md:py-16" data-aos="fade-right">
           <Link href="/">
             <Card text="Go to Home" imageSrc="/assets/hero.png" />
           </Link>

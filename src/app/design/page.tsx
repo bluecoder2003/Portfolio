@@ -89,13 +89,13 @@ const DesignPage: React.FC = () => {
           />
         ))}
 
-      <div className="flex flex-col md:flex-row gap-8 md:gap-20 py-16">
-        <div className="py-8 md:py-16">
+      <div className="flex flex-col md:flex-row gap-2 md:gap-20 mt-8 md:mt-0">
+        <div className="py-4 md:py-16" data-aos="fade-right">
           <Link href="/development">
             <Card text="Work in Development" imageSrc="/assets/ss_vscode.svg" />
           </Link>
         </div>
-        <div className="py-8 md:py-16">
+        <div className="py-4 md:py-16" data-aos="fade-right">
           <Link href="/">
             <Card text="Go to Home" imageSrc="/assets/hero.png" />
           </Link>
