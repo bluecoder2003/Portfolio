@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({ text, imageSrc }) => {
         position: 'relative',
         overflow: 'hidden',
       }}
-      className="flex flex-col items-start justify-start text-2xl sm:text-3xl rounded-xl w-auto h-[15rem] sm:w-[34rem] sm:h-[20rem] p-6 sm:px-10 sm:py-10 text-bglight transition-all duration-300 border border-bgdark hover:border-[#340D65]"
+      className="flex flex-col items-start justify-start text-2xl sm:text-3xl rounded-xl w-[20rem] sm:w-[34rem] h-[15rem] sm:h-[20rem] p-6 sm:px-10 sm:py-10 text-bglight transition-all duration-300 border border-bgdark hover:border-[#340D65]"
     >
       <div className="flex flex-col items-start justify-between w-full">
         <span>{text}</span>
