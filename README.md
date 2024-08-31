@@ -122,10 +122,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- **GitHub**: [Your GitHub Profile](https://github.com/your-username)
+- **Email**: neelakshidas2003@gmail.com
+- **LinkedIn**: [Your LinkedIn Profile]([https://www.linkedin.com/in/your-profile/](https://www.linkedin.com/in/neelakshi-das-b0ba68244/))
+- **GitHub**: [Your GitHub Profile]((https://github.com/bluecoder2003))
 
 ---
-
-Feel free to replace placeholders with actual information related to your project.
