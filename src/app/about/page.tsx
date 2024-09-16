@@ -61,7 +61,7 @@ const Page: React.FC = () => {
         <div className="ml-12 flex-1">
           <div className="flex items-center space-x-3 mb-2">
             <h3 className="text-lg md:text-xl lg:text-xl font-normal text-bglight dark:text-bglight">Vexio</h3>
-            <span className="text-lg md:text-lg lg:text-lg gradient-text">Designer</span>
+            <span className="text-lg md:text-lg lg:text-lg gradient-text">Designer & Developer</span>
           </div>
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">July - Present, 2024</time>
           <p className="text-base font-normal text-[#746D80]">
@@ -94,8 +94,8 @@ const Page: React.FC = () => {
         </span>
         <div className="ml-12 flex-1">
           <div className="flex items-center space-x-3 mb-2">
-            <h3 className="text-lg md:text-xl lg:text-xl font-normal text-bglight dark:text-bglight">VNG Medical</h3>
-            <span className="text-lg md:text-lg lg:text-lg gradient-text">Designer</span>
+            <h3 className="text-lg md:text-xl lg:text-xl font-normal text-bglight dark:text-bglight">VNG</h3>
+            <span className="text-lg md:text-lg lg:text-lg gradient-text">Designer & Developer</span>
           </div>
           <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">December 2023 - Present</time>
           <p className="text-base font-normal text-[#746D80]">
