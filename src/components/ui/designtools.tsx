@@ -13,8 +13,7 @@ export function CardDemo() {
       </CardSkeletonContainer>
       <CardTitle>Design Tools I use</CardTitle>
       <CardDescription>
-        A card that showcases a set of tools that you use to create your
-        product.
+        Stepping stones to create beautiful and functional designs.
       </CardDescription>
     </Card>
   );

@@ -31,8 +31,11 @@ const Page: React.FC = () => {
         <div className="text-3xl md:text-3xl lg:text-5xl text-center text-bglight">
           Me in a nutshell
         </div>
-        <div className="flex flex-col items-center text-lg md:text-xl lg:text-xl py-8 text-center text-[#746D80] px-4 sm:px-6 lg:px-40 ">
-        I’m a designer and front-end developer with a passion for creating intuitive and engaging digital experiences. I’ve had the privilege of winning the Girls Track in two hackathons and gaining valuable experience through three internships. These opportunities have allowed me to grow both professionally and personally, and I’m always eager to take on new challenges and learn from each experience.
+        <div className="flex flex-col items-center text-base md:text-xl lg:text-xl text-center font-normal gradient-text px-2 sm:px-2 lg:px-40 ">
+        "Every project is a chance to tell a story."
+        </div>
+        <div className="flex flex-col items-center text-base md:text-xl lg:text-xl text-center text-[#746D80] px-4 sm:px-6 lg:px-40 ">
+        As a designer and front-end developer, I thrive on transforming ideas into intuitive and engaging digital experiences. My journey has been marked by creativity, innovation, and a commitment to making technology accessible and enjoyable for everyone.
         </div>
       </div>
 

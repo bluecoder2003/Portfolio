@@ -75,7 +75,7 @@ export const FloatingNav = ({
     )}
   >
     <div className="text-white text-xl">
-  <img src = "/assets/neel_logo.svg" alt="Description of image" className="w-8 h-8" />
+  <img src = "/assets/logoneel.svg" alt="Description of image" className="w-8 h-8" />
 </div>
     <button
       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

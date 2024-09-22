@@ -7,6 +7,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import Navbar from "@/components/custom/Navbar";
 import Footer from "@/components/custom/Footer";
 import Preloader from "@/components/custom/Preloader";
+import CustomCursor from '@/components/custom/CustomCursor';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <CustomCursor />  
           </>
         )}
       </body>

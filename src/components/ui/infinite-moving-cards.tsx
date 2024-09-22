@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export const InfiniteMovingCards = ({
   items,
@@ -9,16 +10,20 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
+  children,
 }: {
   items: {
     quote: string;
     name: string;
     title: string;
+    photo: string;
+    linkedinLink: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  children: (item: any) => React.ReactNode;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -69,6 +74,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
@@ -94,30 +100,7 @@ export const InfiniteMovingCards = ({
             }}
             key={item.name}
           >
-            <blockquote>
-  <div
-    aria-hidden="true"
-    className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-  ></div>
-  <div className="relative z-20 mt-6 mb-6 flex flex-row items-center">
-    <img
-      src="/assets/profile.svg"
-      alt="Profile"
-      className="w-10 h-10 rounded-full mr-4"
-    />
-    <span className="flex flex-col">
-      <span className="text-base leading-[1.6] text-white font-semibold break-words">
-        {item.name}
-      </span>
-      <span className="text-base leading-[1.6] text-gray-400 font-normal break-words">
-        {item.title}
-      </span>
-    </span>
-  </div>
-  <span className="flex relative z-20 text-base leading-[1.6] text-bglight font-light break-words" style={{ textAlign: 'justify' }}>
-  {item.quote}
-</span>
-</blockquote>
+            {children(item)}
           </li>
         ))}
       </ul>

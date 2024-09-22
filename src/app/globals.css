@@ -53,3 +53,43 @@ body {
   height: 40px; /* Set your desired height */
 }
 
+@media (min-width: 768px) {
+  
+  .blob {
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    background-image: linear-gradient(#1100ff 10%, #ff00f2);
+    filter: blur(250px);
+    transition: all 450ms ease-out;
+    z-index: -1;
+  }
+  .custom-cursor {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .cursor-circle {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #A52BF8; /* Adjust color and opacity as needed */
+    pointer-events: none; /* Ensure the custom cursor doesn't interfere with mouse events */
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+}
+/* .custom-cursor {
+  cursor: none; 
+} */
+
+/* .cursor-circle {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A52BF8; 
+  pointer-events: none; 
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+} */
