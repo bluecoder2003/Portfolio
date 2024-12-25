@@ -21,9 +21,6 @@ Welcome to my portfolio! This project showcases my work in web design and develo
   - React
   - Tailwind CSS
   - Framer Motion
-- **Backend**:
-  - Node.js
-  - Express (if applicable)
 - **Utilities**:
   - TypeScript
   - React Icons
