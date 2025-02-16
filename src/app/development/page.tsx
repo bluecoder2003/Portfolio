@@ -7,6 +7,34 @@ import Card from "@/components/custom/Card";
 
 const developmentCardData = [
   {
+    title: "Flint",
+    description:
+      "Flint empowers you to streamline tasks, collaborate effortlessly, and optimize your workflows, all in one intuitive platform.",
+    bgImage: "/assets/bg_pic2.svg",
+    recentText: "PROJECT",
+    tags: ["React Flow", "Kanban"],
+    imgSrc: "/assets/flintsocial.svg",
+    imgAlt: "API Integration Project",
+    titleColor: "bglight", // Example color
+    textColor: "bglight", // Example color
+    tagBorderColor: "bglight",
+    buttonLink:"https://www.flint.social/"
+  },
+  {
+    title: "AOT Website",
+    description:
+      "College website that showcases the events, achievements, placement records etc.",
+    bgImage: "/assets/bg_pic.svg",
+    recentText: "PROJECT",
+    tags: ["Development", "Web App"],
+    imgSrc: "/assets/aotwebsite.svg",
+    imgAlt: "Web App Development Project",
+    titleColor: "bgdark", // Example color
+    textColor: "bgdark", // Example color
+    tagBorderColor: "bgdark", // Example color
+    buttonLink:"https://github.com/lowcg/downhill"
+  },
+  {
     title: "KnowledgeNook",
     description:
       "Hackathon project that helped up build a website for college students to access study materials easily and track progress.",
@@ -19,34 +47,6 @@ const developmentCardData = [
     textColor: "bglight", // Example color
     tagBorderColor: "bglight",
     buttonLink:"https://github.com/LoadingMinds/KnowledgeNookHack4bengal"
-  },
-  {
-    title: "AOT Website",
-    description:
-      "College website that showcases the events, achievements, placement records etc.",
-    bgImage: "/assets/bg_pic.svg",
-    recentText: "GROUP PROJECT",
-    tags: ["Development", "Web App"],
-    imgSrc: "/assets/aotwebsite.svg",
-    imgAlt: "Web App Development Project",
-    titleColor: "bgdark", // Example color
-    textColor: "bgdark", // Example color
-    tagBorderColor: "bgdark", // Example color
-    buttonLink:"https://github.com/lowcg/downhill"
-  },
-  {
-    title: "Collab Hub",
-    description:
-      "Experience the ultimate Kanban tool—effortlessly intuitive with real-time flowchart integration.",
-    bgImage: "/assets/bg_pic2.svg",
-    recentText: "GROUP PROJECT",
-    tags: ["React Flow", "Kanban"],
-    imgSrc: "/assets/collabhub.svg",
-    imgAlt: "API Integration Project",
-    titleColor: "bglight", // Example color
-    textColor: "bglight", // Example color
-    tagBorderColor: "bglight",
-    buttonLink:"https://github.com/collab-hub12"
   },
 ];
 

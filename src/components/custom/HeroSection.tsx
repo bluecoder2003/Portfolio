@@ -104,8 +104,8 @@ const HeroSection: React.FC = () => {
                 Let's Connect
               </a>
               <a
-                href="/assets/Neelakshi_Das_resume.pdf"
-                download="Neelakshi_Das_resume.pdf"
+                href="/assets/Neelakshi_Das_Resume.pdf"
+                download="Neelakshi_Das_Resume.pdf"
                 className="relative inline-flex h-12 overflow-hidden rounded-xl p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
